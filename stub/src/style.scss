@@ -1,0 +1,7 @@
+.page {
+    box-sizing: border-box;
+}
+
+@import './blocks/theme/theme.scss';
+@import './blocks/layout/layout.scss';
+@import './blocks/grid/grid.scss';

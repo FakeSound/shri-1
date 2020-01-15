@@ -1,0 +1,89 @@
+.theme {
+    &_color {
+        &_project-default {
+            --background-default: #FFFFFF;
+            --background-accent: #ffcc00;
+            --background-border: #000000;
+        
+            --font-color-primary: #000000;
+            --font-color-secondary: rgba(0, 0, 0, 0.6);
+            --font-color-additional: rgba(0, 0, 0, 0.3);
+            --font-color-link: #0077ff;
+        }
+
+        &_project-brand {
+            --background-default: #0077ff;
+            --background-accent: #FFFFFF;
+            --background-border: #FFFFFF;
+
+            --font-color-primary: #FFFFFF;
+            --font-color-secondary: rgba(255, 255, 255, 0.6);
+            --font-color-additional: rgba(255, 255, 255, 0.3);
+            --font-color-link: #FFFFFF;
+        }
+        
+        &_project-inverse {
+            --background-default: #000000;
+            --background-accent: #FFFFFF;
+            --background-border: #FFFFFF;
+
+            --font-color-primary: #FFFFFF;
+            --font-color-secondary: rgba(255, 255, 255, 0.6);
+            --font-color-additional: rgba(255, 255, 255, 0.3);
+            --font-color-link: #0077ff;
+        }
+
+        &_project-warning {
+            --background-default: #ff3333;
+            --background-accent: #FFFFFF;
+            --background-border: #ff3333;
+
+            --font-color-primary: #FFFFFF;
+            --font-color-secondary: rgba(255, 255, 255, 0.6);
+            --font-color-additional: rgba(255, 255, 255, 0.3);
+            --font-color-link: #FFF;
+        }
+    }
+
+    &_size {
+        &_default {
+            --height-s: 8px;
+            --height-m: 10px;
+            --height-l: 11px;
+            --height-xl: 13px;
+            --height-xxl: 16px;
+        
+            --line-height-s: 21px;
+            --line-height-m: 25px;
+            --line-height-l: 28px;
+            --line-height-xl: 34px;
+            --line-height-xxl: 38px;
+        }
+    }
+
+    &_space {
+        &_default {
+            --space-xxxs: 3px;
+            --space-xxs: 6px;
+            --space-xs: 9px;
+            --space-s: 15px;
+            --space-m: 18px;
+            --space-l: 24px;
+            --space-xl: 27px;
+            --space-xxl: 36px;
+            --space-xxxl: 45px;
+            --space-xxxxl: 51px;
+            --space-xxxxxl: 72px;
+        }
+    }
+
+    &_gap {
+        &_small {
+            --gap: var(--space-xl);
+
+            @media (max-width: 1024px) {
+                --gap: var(--space-s);
+            }    
+        }
+    }
+}
