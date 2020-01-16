@@ -1,4 +1,8 @@
 .grid {
+    display: flex;
+    flex-wrap: wrap;
+
+
     &_m-columns {
         &_12 {
             --num-cols: 12;
@@ -19,37 +23,39 @@
 
     &_col-gap {
         &_two-thirds {
-            margin-left: calc( var(--gap) / 3 * 2 );
-            margin-right: calc( var(--gap) / 3 * 2 );
+            --col-gap: calc( var(--gap) / 3 * 2 );
         }
 
         &_full {
-            margin-left: var(--gap);
-            margin-right: var(--gap);
+            --col-gap: var(--gap);
         }
 
         &_half {
-            margin-left: calc( var(--gap) / 2 );
-            margin-right: calc( var(--gap) / 2 );
+            --col-gap: calc( var(--gap) / 2 );
         }
     }
 
     &_row-gap {
         &_half {
-            margin-left: calc( var(--gap) / 2 );
-            margin-right: calc( var(--gap) / 2 );
+            --row-gap: calc( var(--gap) / 2 );
         }
 
         &_full {
-            margin-left: var(--gap);
-            margin-right: var(--gap);
+            --row-gap: var(--gap);
         }
     }
 
     &__fraction {
-        &_m-col {
-            max-width: 100%;
+        max-width: 100%;
 
+        &:not(:last-of-type) {
+            margin-bottom: var(--row-gap);
+        }
+
+        padding-left: var(--col-gap);
+        padding-right: var(--col-gap);
+
+        &_m-col {
             &_2 {
                 width: calc( 100% / var(--num-cols) * 2 );
             }

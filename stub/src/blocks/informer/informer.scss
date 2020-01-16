@@ -12,17 +12,47 @@
     }
 
     &__content {
+        display: flex;
+
         &_distribute {
             &_default {
-
+                justify-content: initial;
             }
 
             &_between {
-
+                justify-content: space-between;
             }
 
             &_center {
+                justify-content: center;
+            }
+        }
 
+        &_space-a {
+            &_xl {
+                padding: var(--space-xl);
+            }
+
+            &_xxl {
+                padding: var(--space-xxl);
+            }
+        }
+    }
+
+    &__action {
+        display: flex;
+
+        &_distribute {
+            &_default {
+                justify-content: initial;
+            }
+
+            &_between {
+                justify-content: space-between;
+            }
+
+            &_center {
+                justify-content: center;
             }
         }
 

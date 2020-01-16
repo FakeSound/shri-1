@@ -1,5 +1,7 @@
 .layout {
     &__container {
+        max-width: 100%;
+
         &_align {
             &_center {
                 text-align: center;

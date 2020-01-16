@@ -1,7 +1,10 @@
 .placeholder {
+    display: block;
+
     &_size {
         &_m {
-            font-size: var(--size-m);
+            height: 72px;
+            width: 72px;
         }
     }
 

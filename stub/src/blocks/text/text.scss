@@ -1,14 +1,15 @@
 .text {
+    display: flex;
+    flex-wrap: wrap;
+
     &_align {
         &_center {
-            text-align: center;
+            justify-content: center;
         }
     }
 
     &_size {
         &_s {
-            font-size: var(--size-s);
-
             --word-width-s: 20px;
             --word-width-m: 48px;
             --word-width-l: 100px;
@@ -17,8 +18,6 @@
         }
 
         &_m {
-            font-size: var(--size-m);
-
             --word-width-s: 24px;
             --word-width-m: 56px;
             --word-width-l: 114px;
@@ -27,8 +26,6 @@
         }
 
         &_l {
-            font-size: var(--size-l);
-
             --word-width-s: 28px;
             --word-width-m: 68px;
             --word-width-l: 138px;
@@ -37,8 +34,6 @@
         }
 
         &_xl {
-            font-size: var(--size-xl);
-
             --word-width-s: 32px;
             --word-width-m: 74px;
             --word-width-l: 154px;
@@ -47,8 +42,6 @@
         }
 
         &_xxl {
-            font-size: var(--size-xxl);
-
             --word-width-s: 36px;
             --word-width-m: 88px;
             --word-width-l: 184px;
@@ -77,23 +70,25 @@
 
     &_view {
         &_primary {
-            color: var(--font-color-primary);
+            --local-bg-color:: var(--font-color-primary);
         }
 
         &_secondary {
-            color: var(--font-color-secondary);
+            --local-bg-color:: var(--font-color-secondary);
         }
 
         &_ghost {
-            color: var(--font-color-additional);
+            --local-bg-color: var(--font-color-additional);
         }
 
         &_link {
-            color: var(--font-color-link);
+            --local-bg-color: var(--font-color-link);
         }
     }
 
     &__word {
+        background-color: var(--local-bg-color);
+
         &_width {
             &_s {
                 width: var(--word-width-s);
