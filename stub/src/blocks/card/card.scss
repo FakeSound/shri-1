@@ -1,0 +1,97 @@
+.card {
+    &_border {
+        &_all {
+            border: 1px solid var(--background-border);
+        }
+    }
+
+    &_view {
+        &_default {
+            background-color: var(--background-default);        
+        }
+    }
+
+    &__content {
+        &_distribute {
+            &_center {
+                
+            }
+        }
+
+        &_vertical-align {
+            &_center {
+
+            }
+        }
+
+        &_space-a {
+            &_m {
+                padding: var(--space-m);
+            }
+
+            &_l {
+                padding: var(--space-l);
+            }
+
+            &_xl {
+                padding: var(--space-xl);
+            }
+
+            &_xxl {
+                padding: var(--space-xxl);
+            }
+
+            &_xxxl {
+                padding: var(--space-xxxl);
+            }
+        }
+    }
+
+    &__footer {
+        &_distribute {
+            &_between {
+
+            }
+
+            &_center {
+
+            }
+
+            &_right {
+
+            }
+        }
+
+        &_vertical-align {
+            &_center {
+
+            }
+
+            &_top {
+
+            }
+
+            &_bottom {
+
+            }
+        }
+
+        &_space-a {
+            &_m {
+                padding: var(--space-m);
+            }
+
+            &_l {
+                padding: var(--space-l);
+            }
+
+            &_xl {
+                padding: var(--space-xl);
+            }
+
+            &_xxl {
+                padding: var(--space-xxl);
+            }
+        }
+    }
+}

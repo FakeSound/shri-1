@@ -1,0 +1,39 @@
+.button {
+    background-color: var(--background-accent);
+
+    &_size {        
+        &_s {
+            height: 24px;
+        }
+
+        &_m {
+            height: 32px;
+        }
+
+        &_l {
+            height: 42px;
+        }
+
+        &_xl {
+            height: 56px;
+        }
+
+        &_xxl {
+            height: 64px;
+        }
+
+        &_s,
+        &_m,
+        &_l,
+        &_xl,
+        &_xxl {
+            width: 200px;
+        }
+    }
+
+    &_width {
+        &_full {
+            width: 100%;
+        }
+    }
+}

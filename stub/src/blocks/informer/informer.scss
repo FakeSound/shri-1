@@ -1,0 +1,39 @@
+.informer {
+    &_border {
+        &_all {
+            border: 3px solid var(--background-border);
+        }
+    }
+
+    &_view {
+        &_default {
+            background-color: var(--background-default);        
+        }
+    }
+
+    &__content {
+        &_distribute {
+            &_default {
+
+            }
+
+            &_between {
+
+            }
+
+            &_center {
+
+            }
+        }
+
+        &_space-a {
+            &_xl {
+                padding: var(--space-xl);
+            }
+
+            &_xxl {
+                padding: var(--space-xxl);
+            }
+        }
+    }
+}

@@ -9,6 +9,8 @@
             --font-color-secondary: rgba(0, 0, 0, 0.6);
             --font-color-additional: rgba(0, 0, 0, 0.3);
             --font-color-link: #0077ff;
+
+            --background-image: '/assets/images/image-placeholder-primary.svg';
         }
 
         &_project-brand {
@@ -20,6 +22,8 @@
             --font-color-secondary: rgba(255, 255, 255, 0.6);
             --font-color-additional: rgba(255, 255, 255, 0.3);
             --font-color-link: #FFFFFF;
+
+            --background-image: '/assets/images/image-placeholder-inverse.svg';
         }
         
         &_project-inverse {
@@ -31,6 +35,8 @@
             --font-color-secondary: rgba(255, 255, 255, 0.6);
             --font-color-additional: rgba(255, 255, 255, 0.3);
             --font-color-link: #0077ff;
+
+            --background-image: '/assets/images/image-placeholder-inverse.svg';
         }
 
         &_project-warning {
@@ -47,11 +53,11 @@
 
     &_size {
         &_default {
-            --height-s: 8px;
-            --height-m: 10px;
-            --height-l: 11px;
-            --height-xl: 13px;
-            --height-xxl: 16px;
+            --size-s: 8px;
+            --size-m: 10px;
+            --size-l: 11px;
+            --size-xl: 13px;
+            --size-xxl: 16px;
         
             --line-height-s: 21px;
             --line-height-m: 25px;
@@ -81,7 +87,7 @@
         &_small {
             --gap: var(--space-xl);
 
-            @media (max-width: 1024px) {
+            @media (max-width: $breakpoint) {
                 --gap: var(--space-s);
             }    
         }

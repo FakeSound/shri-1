@@ -1,0 +1,13 @@
+.placeholder {
+    &_size {
+        &_m {
+            font-size: var(--size-m);
+        }
+    }
+
+    &_view {
+        &_primary {
+            background-color: var(--font-color-primary);
+        }
+    }
+}

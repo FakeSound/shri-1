@@ -1,3 +1,5 @@
+$breakpoint: 1024px;
+
 .page {
     box-sizing: border-box;
 }
@@ -5,3 +7,16 @@
 @import './blocks/theme/theme.scss';
 @import './blocks/layout/layout.scss';
 @import './blocks/grid/grid.scss';
+@import './blocks/card/card.scss';
+@import './blocks/form/form.scss';
+@import './blocks/informer/informer.scss';
+@import './blocks/list/list.scss';
+@import './blocks/icon-plus/icon-plus.scss';
+@import './blocks/section/section.scss';
+@import './blocks/text/text.scss';
+@import './blocks/avatar/avatar.scss';
+@import './blocks/brand-logo/brand-logo.scss';
+@import './blocks/placeholder/placeholder.scss';
+@import './blocks/button/button.scss';
+@import './blocks/input/input.scss';
+@import './blocks/image/image.scss';

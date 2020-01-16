@@ -1,0 +1,25 @@
+.action {
+    &_distribute {
+        &_default {
+
+        }
+
+        &_between {
+
+        }
+
+        &_center {
+
+        }
+    }
+
+    &_space-a {
+        &_xl {
+            padding: var(--space-xl);
+        }
+
+        &_xxl {
+            padding: var(--space-xxl);
+        }
+    }
+}
