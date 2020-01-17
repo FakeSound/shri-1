@@ -52,12 +52,15 @@
         max-width: 100%;
 
         &:not(:last-of-type) {
-            margin-bottom: var(--row-gap);
             margin-right: var(--col-gap);
         }
 
         @media (max-width: $breakpoint) {
             margin-right: 0;
+
+            &:not(:last-of-type) {
+                margin-bottom: var(--col-gap);
+            }
         }
 
         &_m-col {

@@ -18,6 +18,10 @@
             &_top {
                 border-top: 3px solid var(--background-border);
             }
+
+            &_bottom {
+                border-bottom: 3px solid var(--background-border);
+            }
         }
 
         &_distribute {

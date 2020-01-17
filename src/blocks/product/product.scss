@@ -2,7 +2,8 @@
     min-height: 300px;
 
     &__title {
-        margin-bottom: var(--space-xxxxl);
+        padding-top: var(--space-xxl);
+        padding-bottom: var(--space-xxl);
     }
 
     &__image {
