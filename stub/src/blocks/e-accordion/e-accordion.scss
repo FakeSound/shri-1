@@ -1,0 +1,17 @@
+.e-accordion {
+    display: flex;
+    flex-direction: column;
+
+    &__short {
+        width: 100%;
+    }
+    
+    &__more {
+        width: 100%;
+        display: none;
+
+        &_shown {
+            display: var(--accordion-display, 'initial');
+        }
+    }
+}

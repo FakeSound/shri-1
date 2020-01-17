@@ -1,5 +1,12 @@
 .image {
+    width: 100%;
     border: 3px solid var(--background-border);
-    background: var(--background-default) url(var(--background-image)) 50% 50% no-repeat;
-    background-size: cover;  
+    background: var(--background-default) 50% 50% no-repeat;
+    background-size: cover;
+
+    &:empty {
+        &::before{
+            content: var(--background-image);
+        }
+    }
 }

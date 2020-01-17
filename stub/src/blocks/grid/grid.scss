@@ -1,7 +1,8 @@
 .grid {
     display: flex;
     flex-wrap: wrap;
-
+    margin-left: calc( -1 * var(--col-gap) );
+    margin-right: calc( -1 * var(--col-gap) );
 
     &_m-columns {
         &_12 {

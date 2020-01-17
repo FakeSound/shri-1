@@ -14,7 +14,8 @@
             --word-width-m: 48px;
             --word-width-l: 100px;
             
-            --word-height: 8px;
+            --word-height: var(--size-s);
+            --word-line-height: var(--line-height-s);
         }
 
         &_m {
@@ -22,7 +23,8 @@
             --word-width-m: 56px;
             --word-width-l: 114px;
 
-            --word-height: 10px;
+            --word-height: var(--size-m);
+            --word-line-height: var(--line-height-m);
         }
 
         &_l {
@@ -30,7 +32,8 @@
             --word-width-m: 68px;
             --word-width-l: 138px;
 
-            --word-height: 11px;
+            --word-height: var(--size-l);
+            --word-line-height: var(--line-height-l);
         }
 
         &_xl {
@@ -38,7 +41,8 @@
             --word-width-m: 74px;
             --word-width-l: 154px;
 
-            --word-height: 13px;
+            --word-height: var(--size-xl);
+            --word-line-height: var(--line-height-xl);
         }
 
         &_xxl {
@@ -46,7 +50,8 @@
             --word-width-m: 88px;
             --word-width-l: 184px;
 
-            --word-height: 16px;
+            --word-height: var(--size-xxl);
+            --word-line-height: var(--line-height-xxl);
         }
     }
 
@@ -93,16 +98,25 @@
             &_s {
                 width: var(--word-width-s);
                 height: var(--word-height);
+
+                margin-top: calc( ( var(--word-line-height) - var(--word-height) ) / 2 );
+                margin-bottom: calc( ( var(--word-line-height) - var(--word-height) ) / 2 );
             }
 
             &_m {
                 width: var(--word-width-m);
                 height: var(--word-height);
+
+                margin-top: calc( ( var(--word-line-height) - var(--word-height) ) / 2 );
+                margin-bottom: calc( ( var(--word-line-height) - var(--word-height) ) / 2 );
             }
 
             &_l {
                 width: var(--word-width-l);
                 height: var(--word-height);
+
+                margin-top: calc( ( var(--word-line-height) - var(--word-height) ) / 2 );
+                margin-bottom: calc( ( var(--word-line-height) - var(--word-height) ) / 2 );
             }
         }
     }

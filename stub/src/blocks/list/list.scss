@@ -12,6 +12,8 @@
     }
 
     &__item {
+        display: flex;
+        
         &_border {
             &_top {
                 border-top: 1px solid var(--background-border);
@@ -20,13 +22,13 @@
 
         &_distribute {
             &_between {
-
+                justify-content: space-between;
             }
         }
 
         &_vertical-align {
             &_center {
-
+                align-items: center;
             }
         }
 
