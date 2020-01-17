@@ -1,6 +1,6 @@
 module.exports = {
     init: function($){
-        $(document).on('click', '.onoffswitch', function(){
+        $('body').on('click', '.onoffswitch', function(){
             var defClass = 'theme_color_project-default',
                 invClass = 'theme_color_project-inverse',
                 $default = $('.' + defClass),
