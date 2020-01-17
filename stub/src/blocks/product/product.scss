@@ -1,0 +1,12 @@
+.product {
+    min-height: 300px;
+
+    &__image {
+        width: 100%;
+        height: 160px;
+    }
+
+    &__footer {
+        flex-direction: column;
+    }
+}

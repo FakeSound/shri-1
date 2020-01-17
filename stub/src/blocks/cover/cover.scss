@@ -1,0 +1,13 @@
+.cover {
+    min-height: 472px;
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__preview {
+        height: 180px;
+        margin-bottom: var(--space-l);
+    }
+}

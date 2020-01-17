@@ -13,10 +13,10 @@
 
     &__item {
         display: flex;
-        
+
         &_border {
             &_top {
-                border-top: 1px solid var(--background-border);
+                border-top: 3px solid var(--background-border);
             }
         }
 

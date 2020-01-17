@@ -1,0 +1,20 @@
+.onoffswitch {
+    width: 97px;
+    height: 32px;
+    border: 2px solid var(--background-border);
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    &__button {
+        height: 24px;
+        width: 24px;
+        background: var(--background-border);
+
+        margin: 0 calc( (32px - 24px - 2px - 2px) / 2 );
+    }
+
+    &_checked {
+        justify-content: flex-end;
+    }
+}

@@ -1,0 +1,22 @@
+.history {
+    &__show {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__details {
+        display: flex;
+    }
+
+    &__description {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__time {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}

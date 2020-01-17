@@ -9,8 +9,13 @@ body {
     * {
         box-sizing: border-box;
     }
+
+    background-color: var(--background-default);
 }
 
+/**
+ * Дизайн-система
+ */
 @import './blocks/theme/theme.scss';
 @import './blocks/layout/layout.scss';
 @import './blocks/grid/grid.scss';
@@ -28,3 +33,16 @@ body {
 @import './blocks/input/input.scss';
 @import './blocks/image/image.scss';
 @import './blocks/e-accordion/e-accordion.scss';
+
+/**
+ * Контентные блоки
+ */
+@import './blocks/payment/payment.scss';
+@import './blocks/warning/warning.scss';
+@import './blocks/product/product.scss';
+@import './blocks/history/history.scss';
+@import './blocks/cover/cover.scss';
+@import './blocks/event/event.scss';
+@import './blocks/header/header.scss';
+@import './blocks/onoffswitch/onoffswitch.scss';
+@import './blocks/footer/footer.scss';

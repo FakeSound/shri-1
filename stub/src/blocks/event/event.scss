@@ -1,0 +1,21 @@
+.event {
+    min-height: 400px;
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__preview {
+        margin-bottom: var(--space-xxl);
+        display: flex;
+    }
+
+    &__speaker {
+        margin-right: var(--space-xs);
+    }
+
+    &__title {
+        margin-bottom: var(--space-s);
+    }
+}

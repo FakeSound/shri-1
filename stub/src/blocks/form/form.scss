@@ -14,11 +14,10 @@
     &__item {
         display: flex;
         flex-wrap: wrap;
-        width: 100%;
 
         &_border {
             &_bottom {
-                border-bottom: 1px solid var(--background-border);
+                border-bottom: 3px solid var(--background-border);
             }
         }
 
@@ -177,5 +176,7 @@
 
     &__control {
         flex-grow: 1;
+        justify-content: flex-end;
+        display: flex;
     }
 }
