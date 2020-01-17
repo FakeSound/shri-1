@@ -1,8 +1,10 @@
 .grid {
     display: flex;
-    flex-wrap: wrap;
-    margin-left: calc( -1 * var(--col-gap) );
-    margin-right: calc( -1 * var(--col-gap) );
+    justify-content: space-between;
+
+    @media (max-width: $breakpoint) {
+        flex-wrap: wrap;
+    }
 
     &_m-columns {
         &_12 {
@@ -51,10 +53,12 @@
 
         &:not(:last-of-type) {
             margin-bottom: var(--row-gap);
+            margin-right: var(--col-gap);
         }
 
-        padding-left: var(--col-gap);
-        padding-right: var(--col-gap);
+        @media (max-width: $breakpoint) {
+            margin-right: 0;
+        }
 
         &_m-col {
             &_2 {

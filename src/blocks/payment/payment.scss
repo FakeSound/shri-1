@@ -2,5 +2,11 @@
     &__content {
         width: 100%;
         flex-direction: column;
+
+        .form__item {
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
     }
 }

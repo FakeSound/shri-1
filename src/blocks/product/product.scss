@@ -1,6 +1,10 @@
 .product {
     min-height: 300px;
 
+    &__title {
+        margin-bottom: var(--space-xxxxl);
+    }
+
     &__image {
         width: 100%;
         height: 160px;
