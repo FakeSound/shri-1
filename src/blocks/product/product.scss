@@ -9,9 +9,26 @@
     &__image {
         width: 100%;
         height: 160px;
+
+        .image {
+            &:empty {
+                &:before {
+                    margin-top: 3px;
+                }
+            }
+        }
     }
 
     &__footer {
         flex-direction: column;
+
+        .text__word {
+            &_width {
+                &_m {
+                    margin-top: calc( ( var(--word-line-height) - var(--word-height) ) / 2 + 1px);
+                    margin-bottom: calc( ( var(--word-line-height) - var(--word-height) ) / 2 - 1px);
+                }
+            }
+        }
     }
 }

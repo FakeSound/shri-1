@@ -1,4 +1,24 @@
 .payment {
+    .text__word {
+        &_width {
+            &_l {
+                margin-top: calc( ( var(--word-line-height) - var(--word-height) ) / 2 - 1px);
+                margin-bottom: calc( ( var(--word-line-height) - var(--word-height) ) / 2 + 1px);
+            }
+        }
+    }
+
+    &__header {
+        .text__word {
+            &_width {
+                &_l {
+                    margin-top: calc( ( var(--word-line-height) - var(--word-height) ) / 2 - 3px);
+                    margin-bottom: calc( ( var(--word-line-height) - var(--word-height) ) / 2 + 3px);
+                }
+            }
+        }
+    }
+
     &__content {
         width: 100%;
         flex-direction: column;
@@ -7,6 +27,10 @@
             &:last-child {
                 margin-bottom: 0;
             }
+        }
+
+        .form__label {
+            width: 34.99%;
         }
     }
 }

@@ -9,5 +9,28 @@
             margin-top: var(--space-m);
             margin-bottom: var(--space-m);
         }
+
+        .text__word {
+            &_width {
+                &_s {
+                    margin-top: calc( ( var(--word-line-height) - var(--word-height) ) / 2 - 2px);
+                    margin-bottom: calc( ( var(--word-line-height) - var(--word-height) ) / 2 + 2px);
+                }
+    
+                &_m {
+                    margin-top: calc( ( var(--word-line-height) - var(--word-height) ) / 2 - 2px);
+                    margin-bottom: calc( ( var(--word-line-height) - var(--word-height) ) / 2 + 2px);
+                }
+    
+                &_l {
+                    margin-top: calc( ( var(--word-line-height) - var(--word-height) ) / 2 - 2px);
+                    margin-bottom: calc( ( var(--word-line-height) - var(--word-height) ) / 2 + 2px);
+                }
+            }
+        }
+    }
+
+    &__button-wrapper {
+        padding-top: 32px;
     }
 }
