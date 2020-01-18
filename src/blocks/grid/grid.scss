@@ -13,6 +13,8 @@
             @media (max-width: $breakpoint) {
                 --num-cols: 1;
             }
+            
+            --col-width: calc( (100% - var(--col-gap, 0)) / var(--num-cols, 1) );
         }
 
         &_10 {
@@ -21,6 +23,8 @@
             @media (max-width: $breakpoint) {
                 --num-cols: 1;
             }
+
+            --col-width: calc( (100% - var(--col-gap, 0)) / var(--num-cols, 1) );
         }
     }
 
@@ -56,28 +60,27 @@
         }
 
         @media (max-width: $breakpoint) {
-            margin-right: 0;
-
             &:not(:last-of-type) {
+                margin-right: 0;
                 margin-bottom: var(--col-gap);
             }
         }
 
         &_m-col {
             &_2 {
-                width: calc( 100% / var(--num-cols) * 2 );
+                width: calc( var(--col-width) * 2 );
             }
 
             &_3 {
-                width: calc( 100% / var(--num-cols) * 3 );
+                width: calc( var(--col-width) * 3 );
             }
 
             &_4 {
-                width: calc( 100% / var(--num-cols) * 4 );
+                width: calc( var(--col-width) * 4 );
             }
 
             &_5 {
-                width: calc( 100% / var(--num-cols) * 5 );
+                width: calc( var(--col-width) * 5 );
             }
 
             &_8 {

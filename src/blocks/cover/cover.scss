@@ -9,5 +9,9 @@
     &__preview {
         height: 180px;
         margin-bottom: var(--space-l);
+
+        .image {
+            border-color: var(--background-border);
+        }
     }
 }
