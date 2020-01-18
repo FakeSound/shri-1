@@ -32,5 +32,9 @@
 
     &__button-wrapper {
         padding-top: 32px;
+
+        @media (max-width: $breakpoint) {
+            padding-top: 46px;
+        }
     }
 }

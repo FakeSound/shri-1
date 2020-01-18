@@ -12,6 +12,31 @@
 
         .image {
             border-color: var(--background-border);
+
+            &:empty {
+                &:before {
+                    margin-top: 3px;
+                }
+            }
+        }
+    }
+
+    .text__word {
+        &_width {
+            &_s {
+                margin-top: calc( ( var(--word-line-height) - var(--word-height) ) / 2 - 2px);
+                margin-bottom: calc( ( var(--word-line-height) - var(--word-height) ) / 2 + 2px);
+            }
+
+            &_m {
+                margin-top: calc( ( var(--word-line-height) - var(--word-height) ) / 2 - 2px);
+                margin-bottom: calc( ( var(--word-line-height) - var(--word-height) ) / 2 + 2px);
+            }
+
+            &_l {
+                margin-top: calc( ( var(--word-line-height) - var(--word-height) ) / 2 - 2px);
+                margin-bottom: calc( ( var(--word-line-height) - var(--word-height) ) / 2 + 2px);
+            }
         }
     }
 }

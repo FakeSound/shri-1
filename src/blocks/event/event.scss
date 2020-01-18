@@ -17,5 +17,48 @@
 
     &__title {
         margin-bottom: var(--space-s);
+
+        .text {
+            margin-left: 1px;
+
+            &__word {
+                &_width {
+                    &_l {
+                        margin-top: calc( ( var(--word-line-height) - var(--word-height) ) / 2 - 3px);
+                        margin-bottom: calc( ( var(--word-line-height) - var(--word-height) ) / 2 + 3px);
+                    }
+                }
+            }
+        }
+    }
+
+    &__description {
+        .text {
+            margin-left: 1px;
+
+            &__word {
+                &_width {
+                    &_l {
+                        margin-top: calc( ( var(--word-line-height) - var(--word-height) ) / 2 - 1px);
+                        margin-bottom: calc( ( var(--word-line-height) - var(--word-height) ) / 2 + 1px);
+                    }
+                }
+            }
+        }
+    }
+
+    &__footer {
+        .text {
+            margin-left: 1px;
+
+            &__word {
+                &_width {
+                    &_s {
+                        margin-top: calc( ( var(--word-line-height) - var(--word-height) ) / 2 - 2px);
+                        margin-bottom: calc( ( var(--word-line-height) - var(--word-height) ) / 2 + 2px);
+                    }
+                }
+            }
+        }
     }
 }
